@@ -1,11 +1,10 @@
 {
   "manifest_version": 3,
-  "name": "Your extension name",
-  "description": "Your extension description",
+  "name": "Bookmarks mind",
+  "description": "Converts bookmarks into mind maps",
   "version": "1.0",
   "action": {
-    "default_title": "Click to view a popup",
-    "default_popup": "index.html",
+    "default_title": "Click to view chrome bookmarks mindmap",
     "default_icon": {
       "16": "extension_icon@16px.png",
       "32": "extension_icon@32px.png",
@@ -22,6 +21,10 @@
   "side_panel": {
     "default_path": "index.html"
   },
-  "permissions": [],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "permissions": ["bookmarks", "storage"],
   "host_permissions": ["https://*/*", "http://*/*"]
 }

@@ -1,13 +1,15 @@
 {
-  "name": "rsbuild-tailwind-chrome-extension-boilerplate",
+  "name": "chrome-bookmarkmind",
   "type": "module",
   "version": "1.0.0",
   "private": true,
-  "description": "A Chrome plugin template project that combines rsbuild and tailwindcss",
-  "author": "Your github name",
+  "description": "A Chrome plugin that converts bookmarks into mind maps.",
+  "author": "wangkka1@163.com",
   "license": "MIT",
   "keywords": [
     "chrome extension",
+    "mindmaps",
+    "chrome bookmarks extension",
     "react",
     "typescript"
   ],
@@ -19,6 +21,7 @@
     "prepare": "husky"
   },
   "dependencies": {
+    "@ant-design/graphs": "^2.1.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },

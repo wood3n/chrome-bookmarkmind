@@ -23,13 +23,18 @@ export default defineConfig({
     template: "./src/index.html",
   },
   dev: {
-    hmr: false,
+    hmr: true,
+    client: {
+      host: "ilickjlobdemdlmojojaiepnhhinfhjo",
+      protocol: "ws",
+    },
     liveReload: false,
     writeToDisk: true,
     progressBar: false,
   },
   server: {
     open: false,
+    cors: true,
     publicDir: {
       watch: true,
     },
